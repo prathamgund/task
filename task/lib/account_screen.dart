@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/profile_screen.dart'; // Import your ProfileScreen widget here
+import 'package:task/profile_screen.dart'; 
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});
@@ -11,7 +11,7 @@ class AccountScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            // Navigate back to the previous screen (OTP Screen)
+            screen (OTP Screen)
             Navigator.pop(context);
           },
         ),
@@ -79,7 +79,7 @@ class AccountScreen extends StatelessWidget {
                               // Navigate to the Account screen
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const ProfileScreen()), // Replace AccountScreen with your actual account screen
+                                MaterialPageRoute(builder: (context) => const ProfileScreen()),
                               );
                             },
                             style: ButtonStyle(
