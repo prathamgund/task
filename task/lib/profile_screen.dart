@@ -6,16 +6,13 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Service provided and skills data
     List<String> services = ['SEO', 'Free Lancing', 'User Research'];
 
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.menu),
-          onPressed: () {
-            // Handle menu button pressed
-          },
+          onPressed: () {},
         ),
         title: const Text(
           'BFM',
@@ -25,9 +22,7 @@ class ProfileScreen extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(right: 16),
             child: OutlinedButton.icon(
-              onPressed: () {
-                // Handle token icon pressed
-              },
+              onPressed: () {},
               icon: const Icon(Icons.local_offer),
               label: const Text(
                 '50',
@@ -161,14 +156,10 @@ class ProfileScreen extends StatelessWidget {
           children: [
             IconButton(
               icon: const Icon(Icons.home),
-              onPressed: () {
-                // Handle home button pressed
-              },
+              onPressed: () {},
             ),
             TextButton(
-              onPressed: () {
-                // Handle search button pressed
-              },
+              onPressed: () {},
               child: const Text(
                 'Search',
                 style: TextStyle(color: Colors.grey),
@@ -176,9 +167,7 @@ class ProfileScreen extends StatelessWidget {
             ),
             IconButton(
               icon: const Icon(Icons.person),
-              onPressed: () {
-                // Handle profile button pressed
-              },
+              onPressed: () {},
             ),
           ],
         ),
@@ -301,9 +290,7 @@ class ProfileScreen extends StatelessWidget {
       width: double.infinity,
       margin: const EdgeInsets.symmetric(horizontal: 20),
       child: ElevatedButton(
-        onPressed: () {
-          // Handle load more button pressed
-        },
+        onPressed: () {},
         style: ElevatedButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
