@@ -48,7 +48,7 @@ class AccountScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 20), // Added space between text fields and image
+            const SizedBox(height: 20),
           Expanded(
             child: Stack(
               children: [
