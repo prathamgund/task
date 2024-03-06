@@ -10,8 +10,6 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            // Navigate to the previous screen (WelcomeScreen)
             Navigator.pop(context);
           },
         ),
@@ -116,16 +114,15 @@ class LoginScreen extends StatelessWidget {
                           margin: const EdgeInsets.symmetric(vertical: 10),
                           child: ElevatedButton(
                             onPressed: () {
-                              // Navigate to the OTP screen
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const OtpScreen()), // Replace OtpScreen with your actual OTP screen
+                                MaterialPageRoute(builder: (context) => const OtpScreen()), 
                               );
                             },
                             style: ButtonStyle(
                               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0), // Add slight curve
+                                  borderRadius: BorderRadius.circular(10.0),
                                 ),
                               ),
                             ),
@@ -137,7 +134,6 @@ class LoginScreen extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () {
-                            // Handle "Skip this Process" action
                           },
                           child: const Text(
                             'Skip this Process',
