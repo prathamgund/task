@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: WelcomeScreen(), // Setting WelcomeScreen as the home screen
+      home: WelcomeScreen(),
     );
   }
 }
@@ -37,7 +37,7 @@ class WelcomeScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 30.0), // Increased space between the title and other content
+              const SizedBox(height: 30.0),
               const Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -51,7 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 20.0), // Increased space between the title and other content
+                    SizedBox(height: 20.0),
                     Text(
                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                       style: TextStyle(
@@ -61,28 +61,27 @@ class WelcomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 40.0), // Increased space between the button and text
+              const SizedBox(height: 40.0), 
               Center(
                 child: Container(
-                  width: double.infinity, // Make the button width match the available space
+                  width: double.infinity, 
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigate to the login screen
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const LoginScreen()),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.transparent, // Make button transparent
-                      elevation: 0, // Remove button elevation
+                      backgroundColor: Colors.transparent,
+                      elevation: 0,
                     ),
                     child: const Padding(
-                      padding: EdgeInsets.all(12.0), // Increased button padding
+                      padding: EdgeInsets.all(12.0),
                       child: Text(
                         'Get Started',
                         style: TextStyle(
@@ -95,13 +94,13 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 30.0), // Increased space between the button and text
+              const SizedBox(height: 30.0),
               Center(
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const LoginScreen()), // Navigate to the login screen
+                      MaterialPageRoute(builder: (context) => const LoginScreen()),
                     );
                   },
                   child: const Text(
