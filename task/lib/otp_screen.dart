@@ -11,7 +11,6 @@ class OtpScreen extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            // Navigate to the previous screen (LoginScreen)
             Navigator.pop(context);
           },
         ),
@@ -38,29 +37,29 @@ class OtpScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: 60, // Increased width
-                      height: 70, // Increased height
+                      width: 60,
+                      height: 70,
                       child: Center(
                         child: SizedBox(
-                          height: 60, // Specify height
-                          width: 60, // Specify width
+                          height: 60,
+                          width: 60,
                           child: TextField(
                             keyboardType: TextInputType.number,
                             maxLength: 1,
                             textAlign: TextAlign.center,
-                            style: TextStyle(fontSize: 28), // Increased font size
+                            style: TextStyle(fontSize: 28),
                             decoration: InputDecoration(
                               counterText: '',
                               contentPadding: EdgeInsets.all(0),
                               border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(Radius.circular(12)), // Increased border radius
+                                borderRadius: BorderRadius.all(Radius.circular(12)),
                               ),
                             ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 15), // Increased space between boxes
+                    SizedBox(width: 15),
                     SizedBox(
                       width: 60,
                       height: 70,
@@ -161,7 +160,7 @@ class OtpScreen extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 20), // Added space between text fields and image
+          const SizedBox(height: 20),
           Expanded(
             child: Stack(
               children: [
@@ -189,10 +188,9 @@ class OtpScreen extends StatelessWidget {
                           margin: const EdgeInsets.symmetric(vertical: 10),
                           child: ElevatedButton(
                             onPressed: () {
-                              // Navigate to the Account screen
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const AccountScreen()), // Replace AccountScreen with your actual account screen
+                                MaterialPageRoute(builder: (context) => const AccountScreen()), 
                               );
                             },
                             style: ButtonStyle(
